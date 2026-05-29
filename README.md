@@ -7,7 +7,7 @@ A lightweight JavaScript automation script designed to automatically complete ac
 ##  Features
 * **Parallel Execution:** Completes multiple quests simultaneously with a 4-second staggered start.
 * **Multi-Task Support:** Works with `PLAY_ON_DESKTOP`, `STREAM_ON_DESKTOP`, `WATCH_VIDEO`, and `PLAY_ACTIVITY`.
-* **Smart Spoofing:** Safe `.call()` injection to preserve Discord's internal Webpack context and prevent app crashes.
+* **Spoofing:** Safe `.call()` injection to preserve Discord's internal Webpack context and prevent app crashes.
 * **Real-time Logging:** Clear console output showing the progress of each active quest.
 
 ##  How to Use
