@@ -27,7 +27,6 @@ if(quests.length === 0) {
     let realGetStreamerActiveStreamMetadata = ApplicationStreamingStore.getStreamerActiveStreamMetadata;
     let streamQuestsActive = 0;
 
-    // FIX: Using .call() to preserve the original object context to prevent crashes
     RunningGameStore.getRunningGames = () => fakeGames.length > 0 ? fakeGames : realGetRunningGames.call(RunningGameStore);
     RunningGameStore.getGameForPID = (pid) => fakeGames.find(x => x.pid === pid) || realGetGameForPID.call(RunningGameStore, pid);
     ApplicationStreamingStore.getStreamerActiveStreamMetadata = (...args) => activeStream || realGetStreamerActiveStreamMetadata.call(ApplicationStreamingStore, ...args);
